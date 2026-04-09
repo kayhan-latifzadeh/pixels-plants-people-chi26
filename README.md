@@ -3,7 +3,7 @@
 
 # Pixels, Plants, and People: Affective Evaluation of Urban Green Spaces
 
-<img src="dataset-logo.png" alt="Pixels, Plants, and People" width="300">
+<img src="dataset-logo.png" alt="Dataset Logo" width="300">
 
 **Note:** Please download the raw dataset from [Zenodo](https://zenodo.org/records/18348490).
 
@@ -115,10 +115,12 @@ The (comma-delimited) pupil dilation files in `data/pupil-data` have 5 columns:
 
 The (comma-delimited) eye fixation files in `data/fixation-data` have 4 columns:
 
-  - `timestamp`: (int) Unix timestamps in milliseconds
+  - `timestamp`: (int) Time in milliseconds relative to the beginning of the trial
   - `FPOGX`: (int) Fixation positions of X, relative to the top-left corner of the screenshot in pixels
   - `FPOGY`: (int) Fixation positions of Y, relative to the top-left corner of the screenshot in pixels
   - `FPOGD`: (float) Fixation duration in seconds
+
+  **Note:** The first 5000 ms correspond to the **image viewing period**. Rows with `timestamp > 5000` were recorded while the participant was rating the image and can be excluded if only the viewing period is of interest.
 
   Example:
   ```csv
