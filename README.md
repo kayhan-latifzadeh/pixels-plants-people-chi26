@@ -171,10 +171,10 @@ If you use the dataset, please cite us using this bibliographic reference:
 ```bibtex
 @inproceedings{latifzadeh2026pixels,
   title={Pixels, Plants, and People: Affective Evaluation of Urban Green Spaces},
-  author={Latifzadeh, Kayhan and Emami, Parvin and Fariba, Emami and Duraisamy, Saravanakumar and Leiva, Luis A.},
+  author={Latifzadeh, Kayhan and Emami, Parvin and Emami, Fariba and Duraisamy, Saravanakumar and A. Leiva, Luis},
   booktitle={Proceedings of the 2026 CHI Conference on Human Factors in Computing Systems},
-  year={2026},
-  doi={10.1145/3772318.3791826}
+  pages={1--22},
+  year={2026}
 }
 ```
 
